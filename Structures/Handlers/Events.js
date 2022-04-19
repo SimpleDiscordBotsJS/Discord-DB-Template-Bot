@@ -3,7 +3,7 @@ const { Events } = require("../Validation/EventNames");
 module.exports = async(client, PG, AsciiTable3) => {
     const Table = new AsciiTable3("Events Loaded");
 
-    (await PG(`${process.cwd()}/Events/*/*.js`)).map(async (file) => {
+    (await PG(`${(process.cwd().replace(/\\/g, '/'))}/Events/*/*.js`)).map(async (file) => {
         const event = require(file);
 
         if(!Events.includes(event.name) || !event.name) {
@@ -18,7 +18,7 @@ module.exports = async(client, PG, AsciiTable3) => {
             client.on(event.name, (...args) => event.execute(...args, client));
         };
 
-        await Table.addRow(event.name, "✅ SUCCESSFUL")
+        await Table.addRow(event.name, "✔ SUCCESSFUL")
     });
 
     console.log(Table.toString());
