@@ -20,6 +20,6 @@
     "ascii-table3": "^0.7.6",
     "discord.js": "^13.6.0",
     "glob": "^8.0.1",
-    "mongoose": "^6.3.0"
+    "mongoose": "^6.3.1"
   }
 }
