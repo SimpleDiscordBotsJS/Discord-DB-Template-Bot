@@ -6,7 +6,9 @@ Advantages:
  - Hendler's
  - MongoDB
 
-# Instructions
+---
+
+> # Instructions
 ## Customizing the Config.json File
  ```js
  {
@@ -24,9 +26,10 @@ The bot token can be copied in the Bot section of [your application](https://dis
  ```sh
  node .
  ```
-___
 
-# pm2
+---
+
+> # pm2
 ## Install pm2
  ```sh 
  npm install --global pm2
@@ -50,7 +53,7 @@ pm2 logs (. or id) - show logs
  ```
 more in `pm2 -h` or [this](https://pm2.keymetrics.io/docs/usage/quick-start/) and Google 😉
 
-___
+---
 
-## If you want to use nodemon and pm2
+> ## If you want to use nodemon and pm2
  - [Check this](https://stackoverflow.com/questions/69457892/nodemon-watch-vs-pm2-watch)
