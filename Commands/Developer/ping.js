@@ -3,7 +3,13 @@ const Logger = require("../../Utilites/Logger");
 
 module.exports = {
     name: "ping",
+    nameLocalizations: {
+        "ru": "пинг"
+    },
     description: "ping command",
+    descriptionLocalizations: {
+        "ru": "команда пинг"
+    },
     permission: "ADMINISTRATOR",
     /**
      * @param {CommandInteraction} interaction 
@@ -15,6 +21,5 @@ module.exports = {
         Logger.Success("PONG");
         Logger.Message("PONG");
         Logger.Error("PONG");
-        Logger.Debug("PONG");
     }
 }
