@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
 const { Client } = require("discord.js");
 const { DATABASE } = require("../../Structures/config.json");
-const { Success, Error } = require("../../Utilites/Logger");
-const UpdateCheck = require("../../Utilites/UpdateCheck");
+const { Success, Error } = require("../../Utilities/Logger");
+const UpdateCheck = require("../../Utilities/UpdateCheck");
 
 module.exports = {
     name: "ready",
