@@ -3,7 +3,7 @@ It's a template for discord bot
 
 Advantages:
  - It's a template...
- - Hendler's
+ - Handler's
  - MongoDB
 
 ---
@@ -13,7 +13,9 @@ Advantages:
  ```js
  {
     "BOT_TOKEN": "Enter_discord_bot_token",
-    "DATABASE": "Enter_mongoDB_database_url"
+    "DATABASE": "Enter_mongoDB_database_url",
+
+    "DEBUG_EVENT": false
  }
  ```
  
