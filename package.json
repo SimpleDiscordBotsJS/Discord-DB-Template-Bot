@@ -20,7 +20,7 @@
     "ascii-table3": "^0.7.6",
     "discord.js": "^13.8.0",
     "glob": "^8.0.3",
-    "mongoose": "^6.3.6"
+    "mongoose": "^6.3.8"
   },
   "engines": {
     "node": ">=16.14.2"
