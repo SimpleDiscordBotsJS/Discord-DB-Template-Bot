@@ -18,7 +18,7 @@
   "homepage": "https://github.com/SimpleDiscordBotsJS/Discord-DB-Template-Bot#readme",
   "dependencies": {
     "ascii-table3": "^0.7.7",
-    "discord.js": "^13.8.0",
+    "discord.js": "^14.3.0",
     "glob": "^8.0.3",
     "mongoose": "^6.5.2"
   },
