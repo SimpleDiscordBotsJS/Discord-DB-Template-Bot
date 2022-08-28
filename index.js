@@ -19,7 +19,7 @@ client.commands = new Collection();
 //===========================================================
 
 const { connect } = require("mongoose");
-connect(client.config.DATABASE_URL, {}).then(() => Success("[DataBase] The client is now connected to the database."))
+connect(client.config.DATABASE_URL, {}).then(() => Success("[DataBase] The client is now connected to the database."));
 
 loadEvents(client);
 
