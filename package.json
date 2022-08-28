@@ -1,10 +1,16 @@
 {
   "name": "discord-db-template-bot",
-  "version": "1.0.1",
-  "description": "",
-  "main": "./Structures/index.js",
+  "version": "1.1.0",
+  "description": "It's a template for discord bot",
+  "main": "index.js",
+  "dependencies": {
+    "ascii-table3": "^0.7.7",
+    "discord.js": "^14.2.0",
+    "glob": "^8.0.3",
+    "mongoose": "^6.5.3"
+  },
   "scripts": {
-    "start": "node ./Structures/index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -16,13 +22,7 @@
     "url": "https://github.com/SimpleDiscordBotsJS/Discord-DB-Template-Bot/issues"
   },
   "homepage": "https://github.com/SimpleDiscordBotsJS/Discord-DB-Template-Bot#readme",
-  "dependencies": {
-    "ascii-table3": "^0.7.7",
-    "discord.js": "^13.8.0",
-    "glob": "^8.0.3",
-    "mongoose": "^6.5.2"
-  },
   "engines": {
-    "node": ">=16.14.2"
+    "node": ">=16.17.0"
   }
 }
