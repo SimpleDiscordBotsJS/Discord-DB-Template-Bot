@@ -8,20 +8,27 @@ const client = new Client({
     partials: [User, Message, GuildMember, ThreadMember] 
 });
 
-client.config= require("./config.json");
-const { loadEvents } = require("./Handlers/eventHandler");
-
 //===========================================================
+client.config= require("./config.json");
 
 client.events = new Collection();
+client.buttons = new Collection();
 client.commands = new Collection();
 
 //===========================================================
-
 const { connect } = require("mongoose");
-connect(client.config.DATABASE_URL, {}).then(() => Success("[DataBase] The client is now connected to the database."));
+connect(client.config.DATABASE_URL, {}).then(() => {
+    Success("[DataBase] The client is now connected to the database.")
+}).catch((error) => {
+    Warning("[DataBase] The client failed to connect to the database.");
+    Error(error);
+});
 
+const { loadEvents } = require("./Handlers/eventHandler");
 loadEvents(client);
+
+const { loadButtons } = require("./Handlers/buttonHandler");
+loadButtons(client);
 
 //===========================================================
 
@@ -61,13 +68,13 @@ process.on('exit', (code) => { Warning(
     'Code: ' + code,
     '=============================='.toUpperCase());
 });
-
+/*
 process.on('multipleResolves', (type, promise, reason) => { Warning(
     '==== [ Multiple Resolves ] ===='.toUpperCase(),
     type, promise, reason,
     '==============================='.toUpperCase());
 });
-
+*/
 //===========================================================
 
 

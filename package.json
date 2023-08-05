@@ -2,12 +2,12 @@
   "name": "discord-db-template-bot",
   "version": "1.1.0",
   "description": "It's a template for discord bot",
-  "main": "index.js",
+  "main": "Structures/index.js",
   "dependencies": {
-    "ascii-table3": "^0.7.7",
-    "discord.js": "^14.2.0",
-    "glob": "^8.0.3",
-    "mongoose": "^6.5.4"
+    "ascii-table3": "^0.8.2",
+    "discord.js": "^14.12.1",
+    "glob": "^10.3.3",
+    "mongoose": "^7.4.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
