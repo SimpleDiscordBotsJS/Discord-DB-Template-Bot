@@ -7,7 +7,7 @@
     "ascii-table3": "^0.8.2",
     "discord.js": "^14.12.1",
     "glob": "^10.3.3",
-    "mongoose": "^7.4.2"
+    "mongoose": "^7.5.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
