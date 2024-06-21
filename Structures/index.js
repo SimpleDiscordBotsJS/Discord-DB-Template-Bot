@@ -68,26 +68,16 @@ process.on('exit', (code) => { Warning(
     'Code: ' + code,
     '=============================='.toUpperCase());
 });
-/*
-process.on('multipleResolves', (type, promise, reason) => { Warning(
-    '==== [ Multiple Resolves ] ===='.toUpperCase(),
-    type, promise, reason,
-    '==============================='.toUpperCase());
-});
-*/
+
 //===========================================================
 
-
-client.login(client.config.BOT_TOKEN).then(() => {
-        Success("[BOT] Signed.")
-    }).catch(() => {
+client.login(client.config.BOT_TOKEN).catch(() => {
         Error("[BOT] Invalid Bot Login Token.");
         process.exit();
     }
 );
 
 //===========================================================
-
 
 process.on("SIGINT", () => { 
     Success("SIGINT detected, exiting..."); 
